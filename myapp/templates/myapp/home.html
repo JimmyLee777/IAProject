@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %} <!-- Django code -->
+    <link rel="stylesheet" href="{% static 'myapp/css/homestyles.css' %}"> 
+</head>
+<body> <!-- The main part of html -->
+    <h1>Welcome to the Homepage!</h1> <!-- Header -->
+    <div class="button-container">
+        <a href="{% url 'login' %}" class="button">Login</a> <!-- Login button at the homepage -->
+        <a href="{% url 'signup' %}" class="button">Sign Up</a> <!-- Sign up button at the homepage -->
+    </div>
+</body>
+</html>
+
