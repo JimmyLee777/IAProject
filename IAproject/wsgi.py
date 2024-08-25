@@ -15,4 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'IAproject.settings')
 
 application = get_wsgi_application()
 application = WhiteNoise(application, root='staticfiles')
+application.add_files('staticfiles', prefix = 'static/')
 app = application
