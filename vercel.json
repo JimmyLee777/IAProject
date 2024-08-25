@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
         {
-        "src": "IAproject/wsgi.py",
+        "src": "/IAproject/wsgi.py",
         "use": "@vercel/python",
         "config": {
             "maxLambdaSize": "15mb",
@@ -18,10 +18,6 @@
         }
     ],
     "routes": [
-        {
-        "src": "/static/(.*)",
-        "dest": "/staticfiles/$1"
-        },
         {
         "src": "/(.*)",
         "dest": "IAproject/wsgi.py"

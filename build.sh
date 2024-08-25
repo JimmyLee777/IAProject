@@ -16,6 +16,3 @@ python3.12 manage.py migrate --noinput
 #Install whitenoise
 echo "Installing white noise..."
 python3.12 manage.py whitenoise
-# Collect staticfiles
-echo "Collect static..."
-python3.12 manage.py collectstatic --noinput --clear
