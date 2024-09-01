@@ -19,4 +19,6 @@ class Profile(models.Model):
         ('teacher', 'Teacher'),
         ('student', 'Student'),
     )
-    role = models.CharField(max_length = 10, choices = ROLE_CHOICES)
+    role = models.CharField(max_length = 10, choices = ROLE_CHOICES, default = 'student')
+    def __str__(self):
+        return f"{self.user.username} - {self.role}"
